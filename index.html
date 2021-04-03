@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nhập thông số TBA</title>
+    <style type="text/css">
+        table, th, td{
+            border:1px solid #868585;
+        }
+        table{
+            border-collapse:collapse;
+            width:100%;
+        }
+        th, td{
+            text-align:left;
+            padding:10px;
+        }
+        table tr:nth-child(odd){
+            background-color:#eee;
+        }
+        table tr:nth-child(even){
+            background-color:white;
+        }
+        table tr:nth-child(1){
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="tdLabel"><label for="tentram" class="label">Chọn Trạm </label></td>
+            <td>
+              <select name="tenTBA" id="tentram" style="width:160px">
+                <option value="1">T110 Đồng Hới</option>
+                <option value="2">T110 Ba Đồn</option>
+                <option value="3">T110 Sông Gianh</option>
+                <option value="4">T110 Áng Sơn</option>
+                <option value="5">T110 Lệ Thủy</option>
+              </select>
+            </td>
+          </tr>
+        <tr>
+          <td class="tdLabel"><label for="register_name" class="label">Nhập sản lượng(kWh)</label></td>
+          <td><input type="number" name="name" value="" id="sl" style="width:160px"/></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div align="center"><button onclick="guithongso()">Gửi thông số</button>
+            </div>
+          </td>
+        </tr>
+    </table>
+    <script src=main.js></script>
+    Bảng thông số
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên trạm</th>
+            <th>Sản Lượng (kWh)</th>
+        </tr>
+        <tr>
+            <td id = "stt1">1</td>
+            <td id="sl1">T110 Đồng Hới </td>
+            <td ><p >0</p></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>T110 Ba Đồn</td>
+            <td id = "sl2">0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>T110 Sông Gianh</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>T110 Áng Sơn</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>T110 Lệ Thủy</td>
+            <td>0</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
